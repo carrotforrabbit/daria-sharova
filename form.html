@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="image" href="#">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>Daria Sharova</title>
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <section class="intro">
+            <h1 class="intro__title">appointment form</h1>
+            <p class="intro__text">This form will help me to understand your idea. Fill out the form carefully and
+                describe
+                your request in detail as much
+                as possible.</p>
+        </section>
+
+        <form action="#" id="form" class="form__body">
+            <div class="form__item">
+                <input type="text" id="formName" class="form__input" placeholder="Your name">
+            </div>
+            <div class="form__item">
+                <input type="text" id="formMail" class="form__input" placeholder="Your mail">
+            </div>
+            <div class="form__item">
+                <input type="text" id="formName" class="form__input" placeholder="Date of birth">
+            </div>
+            <div class="form__item">
+                <label class="form__label" for="formDiseases">Do you have any chronic diseases?</label>
+                <input type="text" id="formDiseases" class="form__input" placeholder="Your answer">
+            </div>
+            <div class="form__item">
+                <p class="form__label">Is it your first tattoo?</p>
+                <div class="options">
+                    <div class="options__item">
+                        <input id="answerYes" type="radio" name="answer" value="yes" class="options__input" checked>
+                        <label for="answerYes" class="options__label">Yes</label>
+                    </div>
+                    <div class="options__item">
+                        <input id="answerNo" type="radio" name="answer" value="no" class="options__input">
+                        <label for="answerNo" class="options__label">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form__item">
+                <label class="form__label" for="formDays">Best days of the week for an appointment</label>
+                <input type="text" id="formDays" class="form__input" placeholder="Your answer">
+            </div>
+            <div class="form__item">
+                <label class="form__label" for="formIdea">Describe your idea in as much detail as possible</label>
+                <textarea name="idea" id="formIdea"></textarea>
+            </div>
+            <div class="form__item">
+                <p class="form__label">Attach some references(2-5 pictures that you like th most)</p>
+                <div class="file">
+                    <div class="file__item">
+                        <input name="image" accept=".jpg, .png, .gif" type="file" class="file__input">
+                    </div>
+                </div>
+            </div>
+            <div class="form__item">
+                <p class="form__label">A part of the body and the approximate size</p>
+                <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting</p>
+                <div class="file">
+                    <div class="file__item">
+                        <input name="image" accept=".jpg, .png, .gif" type="file" class="file__input">
+                    </div>
+                </div>
+            </div>
+            <div class="form__item">
+                <p class="form__label">If you want to correct/ complete/ continue/ cover up an existing tattoo, then you
+                    need to attach photos of what you
+                    already have</p>
+                <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting</p>
+                <div class="file">
+                    <div class="file__item">
+                        <input name="image" accept=".jpg, .png, .gif" type="file" class="file__input">
+                    </div>
+                </div>
+            </div>
+            <div class="form__item">
+                <div class="checkbox">
+                    <label for="formAgreement" class="checkbox__label">I allow the ....</label>
+                    <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input" checked>
+                </div>
+            </div>
+            <button type="submit" class="form__btn">Send a request</button>
+        </form>
+    </div>
+</body>
+
+</html>

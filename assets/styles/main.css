@@ -1,3 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 140px 143px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.intro {
+  text-align: center;
+}
+
+.up-button {
+  display: none;
+  position: fixed;
+  bottom: 7rem;
+  right: 5rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-image: url("../img/up-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 60%;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s linear;
+}
+.up-button:hover {
+  background-color: #cfcfcf;
+  opacity: 50%;
+  transition: color 0.3s linear;
+}
+
+@media screen and (max-width: 1024px) {
+  .up-button {
+    right: 2.5rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
