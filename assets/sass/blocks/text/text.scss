@@ -1,0 +1,11 @@
+.text {
+  font-size: 1.375rem;
+
+  &_light {
+    color: $light-brown;
+  }
+
+  &_dark {
+    color: $black;
+  }
+}

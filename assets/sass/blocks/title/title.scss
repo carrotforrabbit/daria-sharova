@@ -1,0 +1,16 @@
+.title {
+  font-size: 3rem;
+  font-family: "Hiragino";
+
+  &_small {
+    font-size: 2.25rem;
+  }
+
+  &_dark {
+    color: $black;
+  }
+
+  &_light {
+    color: $dark-brown;
+  }
+}
