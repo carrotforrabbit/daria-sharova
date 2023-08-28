@@ -1,4 +1,28 @@
 .intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/assets/img/main-photo.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  background-image: url("img/main-photo.PNG");
+
+  &__title {
+    font-size: 3.5rem;
+    color: $dark-brown;
+    font-family: "Hiragino";
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 1.875rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }

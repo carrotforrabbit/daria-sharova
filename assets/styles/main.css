@@ -1,14 +1,33 @@
 .body-wrapper {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 140px 143px;
   background-color: #1e1e1e;
-  color: rgb(236, 193, 138);
 }
 
 .intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/assets/img/main-photo.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  background-image: url("img/main-photo.PNG");
+}
+.intro__title {
+  font-size: 3.5rem;
+  color: rgb(192, 137, 55);
+  font-family: "Hiragino";
+  text-transform: uppercase;
+}
+.intro__subtitle {
+  font-size: 1.875rem;
+}
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .up-button {
@@ -59,6 +78,7 @@ html {
 
 .text {
   font-size: 1.375rem;
+  font-weight: 100;
 }
 .text_light {
   color: rgb(236, 193, 138);
