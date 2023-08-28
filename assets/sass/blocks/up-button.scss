@@ -13,12 +13,12 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 60%;
-  background-color: #ffffff;
+  background-color: $light-brown;
   cursor: pointer;
   transition: color 0.3s linear;
 
   &:hover {
-    background-color: #cfcfcf;
+    background-color: $dark-brown;
     opacity: 50%;
     transition: color 0.3s linear;
   }

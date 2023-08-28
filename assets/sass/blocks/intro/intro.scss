@@ -13,12 +13,13 @@
   &__title {
     font-size: 3.5rem;
     color: $dark-brown;
-    font-family: "Hiragino";
+    font-family: "Hiragino", serif;
     text-transform: uppercase;
   }
 
   &__subtitle {
     font-size: 1.875rem;
+    font-weight: bold;
   }
 
   &__wrapper {

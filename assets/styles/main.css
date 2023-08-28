@@ -1,7 +1,7 @@
 .body-wrapper {
   max-width: 1500px;
   margin: 0 auto;
-  background-color: #1e1e1e;
+  background-color: #000000;
 }
 
 .intro {
@@ -19,11 +19,12 @@
 .intro__title {
   font-size: 3.5rem;
   color: rgb(192, 137, 55);
-  font-family: "Hiragino";
+  font-family: "Hiragino", serif;
   text-transform: uppercase;
 }
 .intro__subtitle {
   font-size: 1.875rem;
+  font-weight: bold;
 }
 .intro__wrapper {
   display: flex;
@@ -45,12 +46,12 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 60%;
-  background-color: #ffffff;
+  background-color: rgb(236, 193, 138);
   cursor: pointer;
   transition: color 0.3s linear;
 }
 .up-button:hover {
-  background-color: #cfcfcf;
+  background-color: rgb(192, 137, 55);
   opacity: 50%;
   transition: color 0.3s linear;
 }
@@ -66,9 +67,10 @@
 }
 
 body {
-  background-color: #1e1e1e;
-  font-family: "RockStar", sans-serif;
+  background-color: #000000;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
+  font-weight: 100;
   color: rgb(236, 193, 138);
 }
 
@@ -84,21 +86,57 @@ html {
   color: rgb(236, 193, 138);
 }
 .text_dark {
-  color: #1e1e1e;
+  color: #000000;
 }
 
 .title {
   font-size: 3rem;
-  font-family: "Hiragino";
+  font-family: "Hiragino", serif;
 }
 .title_small {
   font-size: 2.25rem;
 }
 .title_dark {
-  color: #1e1e1e;
+  color: #000000;
 }
 .title_light {
   color: rgb(192, 137, 55);
+}
+
+.btn {
+  font-size: 2rem;
+  font-family: "Hiragino", serif;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.btn_dark {
+  color: #000000;
+}
+.btn_light {
+  color: rgb(192, 137, 55);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8.5rem 10.75rem 8.5rem 3rem;
+}
+.about__title {
+  margin-bottom: 1rem;
+}
+.about__subtitle {
+  margin-bottom: 1rem;
+  color: rgb(192, 137, 55);
+  font-size: 2rem;
+}
+.about__img {
+  margin-right: 7rem;
+}
+.about__text {
+  margin-bottom: 2rem;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=main.css.map */

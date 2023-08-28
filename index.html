@@ -23,7 +23,12 @@
 
         <!-- About -->
         <section class="about wrapper">
-            <img src="#" alt="Daria Sharova." class="about__img">
+            <picture>
+                <source srcset="#" media="(max-width: 1200px) AND (min-width: 481px)">
+                <source srcset="#" media="(max-width: 480px)">
+                <img src="assets/img/Daria-main-desktop.png" alt="Daria Sharova." class="about__img">
+            </picture>
+            <!-- <img src="assets/img/Daria-main.JPG" alt="Daria Sharova." class="about__img"> -->
             <div class="about__container">
                 <h2 class="about__title title title_light">Daria Sharova</h2>
                 <div class="about__wrapper text-wrapper">
@@ -31,7 +36,7 @@
                     <p class="about__text text text_light">
                         My name is Daria Sharova.
                         I'm a professional and ambitious tattoo artist and painter.
-                        <br>
+                        <br><br>
                         I'm one of the few in the world working in the tribal tattoo style. I've been tattooing for 11
                         years, and during this
                         time, I've developed my own unique style and achieved high quality in my work. I’ve been
@@ -42,7 +47,7 @@
                         expression extends
                         beyond tattoos to painting, clothing, and jewellery.
                     </p>
-                    <a href="#" class="about__link btn">Booking</a>
+                    <a href="#" class="about__link btn btn_light">Booking</a>
                 </div>
             </div>
         </section>
@@ -90,7 +95,7 @@
             <div class="works__wrapper">
                 <div class="works__text-wrapper">
                     <h2 class="works__title title title_dark">My Works</h2>
-                    <a href="#" class="works__link btn">Contact me</a>
+                    <a href="#" class="works__link btn btn_dark">Contact me</a>
                 </div>
                 <img src="#" alt="" class="works__img">
             </div>
@@ -99,7 +104,7 @@
                 <img src="#" alt="" class="works__img">
                 <img src="#" alt="" class="works__img">
             </div>
-            <a href="https://www.instagram.com/sh.d.tattoo/" class="works__link btn">More</a>
+            <a href="https://www.instagram.com/sh.d.tattoo/" class="works__link btn btn_dark">More</a>
         </section>
 
         <!-- Session -->
@@ -214,7 +219,8 @@
                     you’re interested to co-create together
                     contact me via email please
                 </p>
-                <a href="mailto:forsh.d.tattoo@gmail.com?subject=Collaboration" class="colab__link btn">Contact
+                <a href="mailto:forsh.d.tattoo@gmail.com?subject=Collaboration"
+                    class="colab__link btn btn_light">Contact
                     me</a>
             </div>
             <img src="#" alt="" class="colab__img">
