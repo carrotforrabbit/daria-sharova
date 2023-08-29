@@ -104,6 +104,7 @@ html {
 }
 
 .btn {
+  position: relative;
   font-size: 2rem;
   font-family: "Hiragino", serif;
   text-decoration: none;
@@ -113,8 +114,21 @@ html {
 .btn_dark {
   color: #000000;
 }
+.btn_dark::after {
+  position: absolute;
+  content: url("/assets/img/icons/arrow-black.svg");
+  right: -30%;
+}
 .btn_light {
   color: rgb(192, 137, 55);
+}
+.btn_light::after {
+  position: absolute;
+  content: url("/assets/img/icons/arrow-brown.svg");
+  right: -30%;
+}
+.btn_light:hover {
+  color: rgb(236, 193, 138);
 }
 
 .about {
@@ -173,6 +187,18 @@ html {
 }
 .style__img-wrapper {
   margin-right: 7rem;
+}
+
+.works {
+  background-color: rgb(166, 125, 68);
+}
+
+.style-point {
+  height: 100vh;
+  background-image: url("/assets/img/lines-vertical-bright.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

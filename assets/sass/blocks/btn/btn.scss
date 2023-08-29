@@ -1,4 +1,5 @@
 .btn {
+  position: relative;
   font-size: 2rem;
   font-family: "Hiragino", serif;
   text-decoration: none;
@@ -7,9 +8,25 @@
 
   &_dark {
     color: $black;
+
+    &::after {
+      position: absolute;
+      content: url("/assets/img/icons/arrow-black.svg");
+      right: -30%;
+    }
   }
 
   &_light {
     color: $dark-brown;
+
+    &::after {
+      position: absolute;
+      content: url("/assets/img/icons/arrow-brown.svg");
+      right: -30%;
+    }
+
+    &:hover {
+      color: $light-brown;
+    }
   }
 }
