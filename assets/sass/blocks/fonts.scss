@@ -24,7 +24,14 @@
 
 @font-face {
   font-family: "Hiragino";
-  src: url(../../fonts/HiraMinPro-W6-AlphaNum.woff2);
+  src: url(../../fonts/HiraMinPro-W3-AlphaNum.woff2);
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hiragino Bold";
+  src: url(../../fonts/HiraMinPro-W6-AlphaNum.woff2);
+  font-weight: bold;
   font-style: normal;
 }

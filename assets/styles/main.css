@@ -139,4 +139,40 @@ html {
   text-align: justify;
 }
 
+.bio {
+  padding: 5rem 3.5rem;
+  display: flex;
+  background-color: rgb(166, 125, 68);
+}
+.bio__title {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.bio__text {
+  text-align: justify;
+}
+.bio__wrapper {
+  padding-top: 1.75rem;
+  margin-right: 7rem;
+}
+
+.style {
+  padding: 5rem 3.5rem;
+  display: flex;
+}
+.style__title {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.style__text {
+  text-align: justify;
+}
+.style__wrapper {
+  padding-top: 4rem;
+  margin-right: 7rem;
+}
+.style__img-wrapper {
+  margin-right: 7rem;
+}
+
 /*# sourceMappingURL=main.css.map */

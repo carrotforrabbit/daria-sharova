@@ -1,0 +1,22 @@
+.style {
+  padding: 5rem 3.5rem;
+  display: flex;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+
+  &__wrapper {
+    padding-top: 4rem;
+    margin-right: 7rem;
+  }
+
+  &__img-wrapper {
+    margin-right: 7rem;
+  }
+}
