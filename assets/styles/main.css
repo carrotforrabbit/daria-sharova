@@ -191,6 +191,41 @@ html {
 
 .works {
   background-color: rgb(166, 125, 68);
+  padding: 9.3rem 3rem 6.25rem 3rem;
+}
+.works__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.75rem;
+}
+.works__text-wrapper {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.works__photo-wrapper {
+  margin-bottom: 3.75rem;
+  display: grid;
+  grid-template-columns: 607px auto;
+  grid-template-rows: 476px auto;
+  gap: 2rem 2rem;
+}
+.works__img_1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: end;
+}
+.works__img_2 {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  justify-self: end;
+}
+.works__img_3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-self: flex-end;
 }
 
 .style-point {
