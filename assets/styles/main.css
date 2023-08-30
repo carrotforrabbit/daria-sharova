@@ -248,12 +248,38 @@ html {
   margin-bottom: 3.5rem;
 }
 .session ul {
-  width: 55%;
+  max-width: 55%;
   list-style-type: none;
 }
 .session ul li {
   margin-bottom: 3rem;
   text-align: justify;
+}
+
+.healing {
+  padding: 4.75rem 9rem;
+  background-color: rgb(166, 125, 68);
+  color: #000000;
+}
+.healing__item-title {
+  font-size: 2rem;
+  font-family: "Hiragino";
+}
+.healing h2 {
+  margin-bottom: 3.5rem;
+}
+.healing__list {
+  max-width: 55%;
+  margin-left: 2rem;
+}
+.healing__list li {
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+.healing ol li::marker {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Hiragino";
 }
 
 /*# sourceMappingURL=main.css.map */

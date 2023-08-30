@@ -1,0 +1,30 @@
+.healing {
+  padding: 4.75rem 9rem;
+  background-color: $bgr-color;
+  color: $black;
+
+  &__item-title {
+    font-size: 2rem;
+    font-family: "Hiragino";
+  }
+
+  h2 {
+    margin-bottom: 3.5rem;
+  }
+
+  &__list {
+    max-width: 55%;
+    margin-left: 2rem;
+
+    li {
+      margin-bottom: 3rem;
+      text-align: justify;
+    }
+  }
+
+  ol li::marker {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Hiragino";
+  }
+}
