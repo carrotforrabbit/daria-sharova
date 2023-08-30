@@ -1,0 +1,21 @@
+.faq {
+  padding: 5rem 10rem;
+  background-color: $bgr-color;
+
+  ul {
+    list-style-type: none;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__item {
+    padding: 2rem 0;
+    border-bottom: 1px solid $black;
+  }
+
+  &__drop-title {
+    margin-bottom: 2rem;
+  }
+}

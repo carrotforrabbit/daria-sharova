@@ -310,4 +310,22 @@ html {
   margin-right: 7rem;
 }
 
+.faq {
+  padding: 5rem 10rem;
+  background-color: rgb(166, 125, 68);
+}
+.faq ul {
+  list-style-type: none;
+}
+.faq__title {
+  margin-bottom: 3rem;
+}
+.faq__item {
+  padding: 2rem 0;
+  border-bottom: 1px solid #000000;
+}
+.faq__drop-title {
+  margin-bottom: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */
