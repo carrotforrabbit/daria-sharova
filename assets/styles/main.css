@@ -265,6 +265,9 @@ html {
   font-size: 2rem;
   font-family: "Hiragino";
 }
+.healing__item-title {
+  margin-bottom: 1.5rem;
+}
 .healing h2 {
   margin-bottom: 3.5rem;
 }
@@ -280,6 +283,31 @@ html {
   font-size: 2rem;
   font-weight: bold;
   font-family: "Hiragino";
+}
+
+.collab {
+  padding: 4.75rem 3.125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.collab__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 7rem;
+}
+.collab__title {
+  margin-bottom: 2rem;
+}
+.collab__text {
+  max-width: 70%;
+  margin-bottom: 5rem;
+}
+.collab__link {
+  margin-bottom: 10rem;
+}
+.collab__img {
+  margin-right: 7rem;
 }
 
 /*# sourceMappingURL=main.css.map */
