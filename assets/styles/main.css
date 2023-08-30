@@ -190,8 +190,9 @@ html {
 }
 
 .works {
-  background-color: rgb(166, 125, 68);
   padding: 9.3rem 3rem 6.25rem 3rem;
+  background-color: rgb(166, 125, 68);
+  text-align: center;
 }
 .works__wrapper {
   display: flex;
@@ -234,6 +235,25 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.session {
+  padding: 4.75rem 9rem;
+  background-image: url("/assets/img/lines-vertical-faded.PNG");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+.session h2 {
+  margin-bottom: 3.5rem;
+}
+.session ul {
+  width: 55%;
+  list-style-type: none;
+}
+.session ul li {
+  margin-bottom: 3rem;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,21 @@
+.session {
+  padding: 4.75rem 9rem;
+  background-image: url("/assets/img/lines-vertical-faded.PNG");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+
+  h2 {
+    margin-bottom: 3.5rem;
+  }
+
+  ul {
+    width: 55%;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 3rem;
+      text-align: justify;
+    }
+  }
+}
