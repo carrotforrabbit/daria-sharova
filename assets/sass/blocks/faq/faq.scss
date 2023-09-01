@@ -13,9 +13,18 @@
   &__item {
     padding: 2rem 0;
     border-bottom: 1px solid $black;
+    cursor: pointer;
   }
 
   &__drop-title {
     margin-bottom: 2rem;
+  }
+
+  &__link {
+    color: inherit;
+
+    &:hover {
+      color: $light-brown;
+    }
   }
 }

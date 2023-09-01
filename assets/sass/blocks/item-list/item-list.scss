@@ -1,0 +1,12 @@
+.item-list {
+  padding: 1rem 0;
+
+  &__item {
+    list-style-type: symbol("-");
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+}
