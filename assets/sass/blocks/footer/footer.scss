@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}

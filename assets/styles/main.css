@@ -346,4 +346,15 @@ html {
   text-decoration: underline;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.footer__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */
