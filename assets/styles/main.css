@@ -390,19 +390,19 @@ html {
 }
 
 .form {
+  max-width: 60%;
   display: block;
   margin: 0 auto;
   padding: 9rem;
 }
 .form__input {
-  width: 70%;
   padding: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   border: 3px solid rgb(192, 137, 55);
   border-radius: 25px;
   background-color: inherit;
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Roboto";
 }
 .form__input:focus {
@@ -411,13 +411,56 @@ html {
 .form__label {
   color: rgba(236, 193, 138, 0.62);
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 100;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 .form__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+}
+.form textarea {
+  resize: vertical;
+}
+
+.options__item {
+  margin-bottom: 0.5em;
+}
+.options__input {
+  display: none;
+}
+.options__input:checked + .options__label::after {
+  transform: scale(1);
+}
+.options__label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 140%;
+  color: rgba(236, 193, 138, 0.62);
+}
+.options__label::before {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-color: #000000;
+  border: 4px solid rgb(236, 193, 138);
+  border-radius: 50%;
+}
+.options__label::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 8px;
+  left: 8px;
+  background-color: rgb(236, 193, 138);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s ease 0s;
 }
 
 /*# sourceMappingURL=main.css.map */

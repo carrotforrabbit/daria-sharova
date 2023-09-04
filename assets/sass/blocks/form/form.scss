@@ -1,17 +1,17 @@
 .form {
+  max-width: 60%;
   display: block;
   margin: 0 auto;
   padding: 9rem;
 
   &__input {
-    width: 70%;
     padding: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     border: 3px solid $dark-brown;
     border-radius: 25px;
     background-color: inherit;
     color: inherit;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: "Roboto";
 
     &:focus {
@@ -22,13 +22,63 @@
   &__label {
     color: $light-brown2;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 100;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}
+
+.options {
+  &__item {
+    margin-bottom: 0.5em;
+  }
+  &__input {
+    display: none;
+
+    &:checked + .options__label::after {
+      transform: scale(1);
+    }
+  }
+
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 140%;
+    color: $light-brown2;
+
+    &::before {
+      content: "";
+      align-self: flex-start;
+      flex: 0 0 24px;
+      height: 24px;
+      margin-right: 10px;
+      background-color: $black;
+      border: 4px solid $light-brown;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      top: 8px;
+      left: 8px;
+      background-color: $light-brown;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: transform 0.3s ease 0s;
+    }
   }
 }
