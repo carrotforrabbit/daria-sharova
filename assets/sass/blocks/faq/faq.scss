@@ -6,8 +6,17 @@
     list-style-type: none;
   }
 
+  details > summary {
+    list-style-type: disc;
+  }
+
+  details[open] > summary {
+    list-style-type: disc;
+    margin-bottom: 2rem;
+  }
+
   &__title {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   &__item {
@@ -16,12 +25,13 @@
     cursor: pointer;
   }
 
-  &__drop-title {
-    margin-bottom: 2rem;
+  &__drop-text {
+    padding-left: 2.5rem;
   }
 
   &__link {
     color: inherit;
+    font-weight: bold;
 
     &:hover {
       color: $light-brown;

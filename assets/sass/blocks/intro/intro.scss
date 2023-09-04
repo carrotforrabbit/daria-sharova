@@ -11,10 +11,30 @@
   text-align: center;
 
   &__title {
+    position: relative;
     font-size: 3.5rem;
     color: $dark-brown;
     font-family: "Hiragino", serif;
     text-transform: uppercase;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-color: $dark-brown;
+      border-radius: 50%;
+    }
+    &::before {
+      left: -5%;
+      bottom: 40%;
+    }
+
+    &::after {
+      right: -5%;
+      bottom: 40%;
+    }
   }
 
   &__subtitle {
