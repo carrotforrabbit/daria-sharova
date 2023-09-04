@@ -1,7 +1,15 @@
 .style-point {
   height: 100vh;
+  padding: 10rem 5rem;
   background-image: url("/assets/img/lines-vertical-bright.PNG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__title,
+  &__text {
+    color: $dark-brown;
+    font-size: 5rem;
+    padding: 3rem;
+  }
 }

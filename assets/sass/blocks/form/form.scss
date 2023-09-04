@@ -1,0 +1,34 @@
+.form {
+  display: block;
+  margin: 0 auto;
+  padding: 9rem;
+
+  &__input {
+    width: 70%;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    border: 3px solid $dark-brown;
+    border-radius: 25px;
+    background-color: inherit;
+    color: inherit;
+    font-size: 1.5rem;
+    font-family: "Roboto";
+
+    &:focus {
+      outline: 1px solid $light-brown;
+    }
+  }
+
+  &__label {
+    color: $light-brown2;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
