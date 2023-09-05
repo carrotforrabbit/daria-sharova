@@ -2,7 +2,7 @@
   max-width: 60%;
   display: block;
   margin: 0 auto;
-  padding: 9rem;
+  padding: 3%;
   padding-top: 5rem;
 
   &__input {
@@ -49,11 +49,24 @@
     background-color: transparent;
     border: none;
     font-size: 2rem;
+    cursor: pointer;
 
     &::after {
       position: absolute;
       content: url("/assets/img/icons/arrow-brown.svg");
       left: 34%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      color: $bgr-color;
+    }
+
+    &:hover {
+      color: $light-brown2;
     }
   }
 }
@@ -130,6 +143,7 @@
     background-image: url("/assets/img/icons/attach-btn.svg");
     background-repeat: no-repeat;
     background-position: left;
+    cursor: pointer;
   }
 
   &__preview {
@@ -183,4 +197,12 @@
       cursor: pointer;
     }
   }
+}
+
+.checkbox._error .checkbox__label::before {
+  border: 3px solid rgb(191, 78, 78);
+}
+
+.form__input._error {
+  border: 3px solid rgb(191, 78, 78);
 }

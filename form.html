@@ -23,13 +23,14 @@
 
         <form action="#" id="form" class="form">
             <div class="form__item">
-                <input type="text" id="formName" class="form__input" placeholder="Your name">
+                <input type="text" id="formName" class="form__input _req" placeholder="Your name">
             </div>
             <div class="form__item">
-                <input type="text" id="formMail" class="form__input" placeholder="Your mail">
+                <input type="text" id="formMail" class="form__input _req _email" placeholder="Your mail">
             </div>
             <div class="form__item">
-                <input type="text" id="formName" class="form__input" placeholder="Date of birth">
+                <input type="text" id="formName" class="form__input _req _date"
+                    placeholder="Date of birth (DD/MM/YYYY)">
             </div>
             <div class="form__item">
                 <label class="form__label" for="formDiseases">Do you have any chronic diseases?</label>
@@ -54,10 +55,10 @@
             </div>
             <div class="form__item">
                 <label class="form__label" for="formIdea">Describe your idea in as much detail as possible</label>
-                <textarea name="idea" class="form__input" id="formIdea"></textarea>
+                <textarea name="idea" class="form__input _req" id="formIdea"></textarea>
             </div>
             <div class="form__item">
-                <p class="form__label">Attach some references (2-5 pictures that you like th most)</p>
+                <p class="form__label">Attach some references (2-5 pictures that you like the most)</p>
                 <div class="file">
                     <div class="file__item">
                         <input name="image" id="formReferenceImg" accept=".jpg, .png, .gif" type="file"
@@ -80,8 +81,8 @@
                 </div>
             </div>
             <div class="form__item">
-                <p class="form__label">If you want to correct/ complete/ continue/ cover up an existing tattoo, then you
-                    need to attach photos of what you
+                <p class="form__label">If you want to correct/ complete/ continue/ cover up an existing tattoo, please
+                    share photos of what you
                     already have</p>
                 <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting</p>
                 <div class="file">
@@ -95,7 +96,7 @@
             </div>
             <div class="form__item">
                 <div class="checkbox">
-                    <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input" checked>
+                    <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input _req" checked>
                     <label for="formAgreement" class="checkbox__label">I acknowledge that I have read the Privacy Policy
                         and consent to the processing of personal data in the manner and on
                         the terms specified in the Policy</label>
@@ -104,6 +105,8 @@
             <button type="submit" class="form__btn">Send a request</button>
         </form>
     </div>
+
+    <script src="assets/scripts/form.js"></script>
 </body>
 
 </html>
