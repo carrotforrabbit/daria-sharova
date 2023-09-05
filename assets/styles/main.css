@@ -422,6 +422,11 @@ html {
 .form textarea {
   resize: vertical;
 }
+.form__subtitle {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
 
 .options__item {
   margin-bottom: 0.5em;
@@ -449,6 +454,7 @@ html {
   background-color: #000000;
   border: 4px solid rgb(236, 193, 138);
   border-radius: 50%;
+  cursor: pointer;
 }
 .options__label::after {
   content: "";
@@ -461,6 +467,37 @@ html {
   border-radius: 50%;
   transform: scale(0);
   transition: transform 0.3s ease 0s;
+}
+
+.file__item {
+  position: relative;
+}
+.file__input {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.file__button {
+  display: inline-block;
+  padding-left: 2.5rem;
+  font-family: "Hiragino";
+  font-size: 1.5rem;
+  color: rgb(192, 137, 55);
+  background-image: url("/assets/img/icons/attach-btn.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.file__preview {
+  display: inline-block;
+  max-width: 100px;
+}
+.file__preview img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

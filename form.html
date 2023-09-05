@@ -56,11 +56,14 @@
                 <textarea name="idea" class="form__input" id="formIdea"></textarea>
             </div>
             <div class="form__item">
-                <p class="form__label">Attach some references(2-5 pictures that you like th most)</p>
+                <p class="form__label">Attach some references (2-5 pictures that you like th most)</p>
                 <div class="file">
                     <div class="file__item">
-                        <input name="image" accept=".jpg, .png, .gif" type="file" class="file__input">
+                        <input name="image" id="formReferenceImg" accept=".jpg, .png, .gif" type="file"
+                            class="file__input">
+                        <div class="file__button">Attach files</div>
                     </div>
+                    <div class="file__preview"></div>
                 </div>
             </div>
             <div class="form__item">
@@ -68,8 +71,11 @@
                 <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting</p>
                 <div class="file">
                     <div class="file__item">
-                        <input name="image" accept=".jpg, .png, .gif" type="file" class="file__input">
+                        <input name="image" id="forPlacementImg" accept=".jpg, .png, .gif" type="file"
+                            class="file__input">
+                        <div class="file__button">Attach files</div>
                     </div>
+                    <div class="file__preview"></div>
                 </div>
             </div>
             <div class="form__item">
@@ -79,14 +85,17 @@
                 <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting</p>
                 <div class="file">
                     <div class="file__item">
-                        <input name="image" accept=".jpg, .png, .gif" type="file" class="file__input">
+                        <input name="image" id="formCorrectionImg" accept=".jpg, .png, .gif" type="file"
+                            class="file__input">
+                        <div class="file__button">Attach files</div>
                     </div>
+                    <div class="file__preview"></div>
                 </div>
             </div>
             <div class="form__item">
                 <div class="checkbox">
-                    <label for="formAgreement" class="checkbox__label">I allow the ....</label>
                     <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input" checked>
+                    <label for="formAgreement" class="checkbox__label">I allow the ....</label>
                 </div>
             </div>
             <button type="submit" class="form__btn">Send a request</button>
