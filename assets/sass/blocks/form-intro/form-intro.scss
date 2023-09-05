@@ -1,0 +1,16 @@
+.form-intro {
+  padding: 8.75rem 20rem 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: $dark-brown;
+  }
+
+  &__text {
+    display: block;
+    max-width: 62%;
+    margin: 0 auto;
+  }
+}
