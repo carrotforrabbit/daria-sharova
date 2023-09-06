@@ -12,4 +12,14 @@
     font-size: 5rem;
     padding: 3rem;
   }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: "Heragino";
+  }
+
+  &__text {
+    font-size: 2rem;
+    padding-right: 40%;
+  }
 }

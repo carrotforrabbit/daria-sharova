@@ -259,6 +259,14 @@ html {
   font-size: 5rem;
   padding: 3rem;
 }
+.style-point__title {
+  text-transform: uppercase;
+  font-family: "Heragino";
+}
+.style-point__text {
+  font-size: 2rem;
+  padding-right: 40%;
+}
 
 .session {
   padding: 4.75rem 9rem;
