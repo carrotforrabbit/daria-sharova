@@ -12,98 +12,105 @@
 
 <body>
     <div class="body-wrapper">
-        <section class="form-intro">
-            <h1 class="form-intro__title title">appointment form</h1>
-            <p class="form-intro__text text">This form will help me to understand your idea. Fill out the form carefully
-                and
-                describe
-                your request in detail as much
-                as possible.</p>
-        </section>
+        <div class="form__body">
+            <section class="form-intro">
+                <h1 class="form-intro__title title">appointment form</h1>
+                <p class="form-intro__text text">This form will help me to understand your idea. Fill out the form
+                    carefully
+                    and
+                    describe
+                    your request in detail as much
+                    as possible.</p>
+            </section>
 
-        <form action="#" id="form" class="form">
-            <div class="form__item">
-                <input type="text" id="formName" class="form__input _req" placeholder="Your name">
-            </div>
-            <div class="form__item">
-                <input type="text" id="formMail" class="form__input _req _email" placeholder="Your mail">
-            </div>
-            <div class="form__item">
-                <input type="text" id="formName" class="form__input _req _date"
-                    placeholder="Date of birth (DD/MM/YYYY)">
-            </div>
-            <div class="form__item">
-                <label class="form__label" for="formDiseases">Do you have any chronic diseases?</label>
-                <input type="text" id="formDiseases" class="form__input" placeholder="Your answer">
-            </div>
-            <div class="form__item">
-                <p class="form__label">Is it your first tattoo?</p>
-                <div class="options">
-                    <div class="options__item">
-                        <input id="answerYes" type="radio" name="answer" value="yes" class="options__input" checked>
-                        <label for="answerYes" class="options__label"><span>Yes</span></label>
-                    </div>
-                    <div class="options__item">
-                        <input id="answerNo" type="radio" name="answer" value="no" class="options__input">
-                        <label for="answerNo" class="options__label"><span>No</span></label>
+            <form action="#" id="form" class="form">
+                <div class="form__item">
+                    <input type="text" id="formName" class="form__input _req" placeholder="Your name">
+                </div>
+                <div class="form__item">
+                    <input type="text" id="formMail" class="form__input _req _email" placeholder="Your mail">
+                </div>
+                <div class="form__item">
+                    <input type="text" id="formName" class="form__input _req _date"
+                        placeholder="Date of birth (DD/MM/YYYY)">
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="formDiseases">Do you have any chronic diseases?</label>
+                    <input type="text" id="formDiseases" class="form__input" placeholder="Your answer">
+                </div>
+                <div class="form__item">
+                    <p class="form__label">Is it your first tattoo?</p>
+                    <div class="options">
+                        <div class="options__item">
+                            <input id="answerYes" type="radio" name="answer" value="yes" class="options__input" checked>
+                            <label for="answerYes" class="options__label"><span>Yes</span></label>
+                        </div>
+                        <div class="options__item">
+                            <input id="answerNo" type="radio" name="answer" value="no" class="options__input">
+                            <label for="answerNo" class="options__label"><span>No</span></label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="form__item">
-                <label class="form__label" for="formDays">Best days of the week for an appointment</label>
-                <input type="text" id="formDays" class="form__input" placeholder="Your answer">
-            </div>
-            <div class="form__item">
-                <label class="form__label" for="formIdea">Describe your idea in as much detail as possible</label>
-                <textarea name="idea" class="form__input _req" id="formIdea"></textarea>
-            </div>
-            <div class="form__item">
-                <p class="form__label">Attach some references (2-5 pictures that you like the most)</p>
-                <div class="file">
-                    <div class="file__item">
-                        <input name="image" id="formReferenceImg" accept=".jpg, .png, .gif" type="file"
-                            class="file__input">
-                        <div class="file__button">Attach files</div>
+                <div class="form__item">
+                    <label class="form__label" for="formDays">Best days of the week for an appointment</label>
+                    <input type="text" id="formDays" class="form__input" placeholder="Your answer">
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="formIdea">Describe your idea in as much detail as possible</label>
+                    <textarea name="idea" class="form__input _req" id="formIdea"></textarea>
+                </div>
+                <div class="form__item">
+                    <p class="form__label">Attach some references (2-5 pictures that you like the most)</p>
+                    <div class="file">
+                        <div class="file__item">
+                            <input name="image" id="formReferenceImg" accept=".jpg, .png, .gif" type="file"
+                                class="file__input" multiple>
+                            <div class="file__button">Attach files</div>
+                        </div>
+                        <div id="referenceImgPreview" class="file__preview"></div>
                     </div>
-                    <div class="file__preview"></div>
                 </div>
-            </div>
-            <div class="form__item">
-                <p class="form__label">A part of the body and the approximate size</p>
-                <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting</p>
-                <div class="file">
-                    <div class="file__item">
-                        <input name="image" id="forPlacementImg" accept=".jpg, .png, .gif" type="file"
-                            class="file__input">
-                        <div class="file__button">Attach files</div>
+                <div class="form__item">
+                    <p class="form__label">A part of the body and the approximate size</p>
+                    <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting
+                    </p>
+                    <div class="file">
+                        <div class="file__item">
+                            <input name="image" id="formPlacementImg" accept=".jpg, .png, .gif" type="file"
+                                class="file__input" multiple>
+                            <div class="file__button">Attach files</div>
+                        </div>
+                        <div id="PlacementImgPreview" class="file__preview"></div>
                     </div>
-                    <div class="file__preview"></div>
                 </div>
-            </div>
-            <div class="form__item">
-                <p class="form__label">If you want to correct/ complete/ continue/ cover up an existing tattoo, please
-                    share photos of what you
-                    already have</p>
-                <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting</p>
-                <div class="file">
-                    <div class="file__item">
-                        <input name="image" id="formCorrectionImg" accept=".jpg, .png, .gif" type="file"
-                            class="file__input">
-                        <div class="file__button">Attach files</div>
+                <div class="form__item">
+                    <p class="form__label">If you want to correct/ complete/ continue/ cover up an existing tattoo,
+                        please
+                        share photos of what you
+                        already have</p>
+                    <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting
+                    </p>
+                    <div class="file">
+                        <div class="file__item">
+                            <input name="image" id="formCorrectionImg" accept=".jpg, .png, .gif" type="file"
+                                class="file__input" multiple>
+                            <div class="file__button">Attach files</div>
+                        </div>
+                        <div id="correctionImgPreview" class="file__preview"></div>
                     </div>
-                    <div class="file__preview"></div>
                 </div>
-            </div>
-            <div class="form__item">
-                <div class="checkbox">
-                    <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input _req" checked>
-                    <label for="formAgreement" class="checkbox__label">I acknowledge that I have read the Privacy Policy
-                        and consent to the processing of personal data in the manner and on
-                        the terms specified in the Policy</label>
+                <div class="form__item">
+                    <div class="checkbox">
+                        <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input _req" checked>
+                        <label for="formAgreement" class="checkbox__label">I acknowledge that I have read the Privacy
+                            Policy
+                            and consent to the processing of personal data in the manner and on
+                            the terms specified in the Policy</label>
+                    </div>
                 </div>
-            </div>
-            <button type="submit" class="form__btn">Send a request</button>
-        </form>
+                <button type="submit" class="form__btn">Send a request</button>
+            </form>
+        </div>
     </div>
 
     <script src="assets/scripts/form.js"></script>
