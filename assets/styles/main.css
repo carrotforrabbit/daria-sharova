@@ -540,11 +540,15 @@ html {
   cursor: pointer;
 }
 .file__preview {
-  display: inline-block;
-  max-width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 50%;
+  padding: 1% 0;
 }
 .file__preview img {
   max-width: 100%;
+  margin: 1%;
 }
 
 .checkbox {

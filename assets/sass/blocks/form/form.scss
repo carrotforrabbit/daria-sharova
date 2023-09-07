@@ -164,11 +164,15 @@
   }
 
   &__preview {
-    display: inline-block;
-    max-width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-width: 50%;
+    padding: 1% 0;
 
     img {
       max-width: 100%;
+      margin: 1%;
     }
   }
 }
