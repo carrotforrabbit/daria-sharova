@@ -13,6 +13,31 @@
 <body>
     <div class="body-wrapper">
         <button onclick="topFunction()" class="up-button"></button>
+
+        <!-- Humburger menu -->
+        <header class="nav">
+            <div id="hamburger" class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hamburger">
+                <nav class="hamburger__container">
+                    <ul class="hamburger__list">
+                        <li class="hamburger__item"><a href="#aboutMe" class="hamburger__link">about me</a></li>
+                        <li class="hamburger__item"><a href="#myStyle" class="hamburger__link">My style</a></li>
+                        <li class="hamburger__item"><a href="#myWorks" class="hamburger__link">My works</a></li>
+                        <li class="hamburger__item"><a href="#preparation" class="hamburger__link">Preparation for
+                                session</a></li>
+                        <li class="hamburger__item"><a href="#healingGuide" class="hamburger__link">Tattoo healing
+                                guide</a>
+                        </li>
+                        <li class="hamburger__item"><a href="#myFaq" class="hamburger__link">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         <!-- Intro -->
         <section class="intro">
             <div class="intro__wrapper">
@@ -53,7 +78,7 @@
         </section>
 
         <!-- Bio -->
-        <section class="bio wrapper">
+        <section class="bio wrapper" id="aboutMe">
             <div class="bio__wrapper text-wrapper">
                 <h2 class="bio__title title title_dark">About me</h2>
                 <p class="bio__text text text_dark">Thanks to my diligence and determination, I have had the
@@ -77,7 +102,7 @@
         </section>
 
         <!-- Style -->
-        <section class="style wrapper">
+        <section class="style wrapper" id="myStyle">
             <div class="style__img-wrapper">
                 <img src="assets/img/style.jpg" alt="Close-up of a tattoo" class="style__img">
             </div>
@@ -101,7 +126,7 @@
         </section>
 
         <!-- Works -->
-        <section class="works">
+        <section class="works" id="myWorks">
             <div class="works__wrapper">
                 <div class="works__text-wrapper">
                     <h2 class="works__title title title_dark">My Works</h2>
@@ -122,7 +147,7 @@
         </section>
 
         <!-- Session -->
-        <section class="session">
+        <section class="session" id="preparation">
             <h2 class="session__title title title_light">Preparation for a session</h2>
             <ul class="session__list">
                 <li class="session__item text text_light">It is very important to get a good night's sleep before the
@@ -153,7 +178,7 @@
         </section>
 
         <!-- Healing -->
-        <section class="healing">
+        <section class="healing" id="healingGuide">
             <h2 class="healing__title title">Tattoo healing guide</h2>
             <ol class="healing__list">
                 <li class="healing__item">
@@ -210,7 +235,7 @@
         </section>
 
         <!-- FAQ -->
-        <section class="faq">
+        <section class="faq" id="myFaq">
             <h2 class="faq__title title title_dark">FAQ</h2>
             <ul class="faq__list">
                 <li class="faq__item">
