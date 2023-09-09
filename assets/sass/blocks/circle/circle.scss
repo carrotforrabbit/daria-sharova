@@ -1,0 +1,14 @@
+.circle {
+  width: 25px;
+  height: 25px;
+  background-color: $dark-brown;
+  border-radius: 50%;
+
+  &_right {
+    margin-right: 2rem;
+  }
+
+  &_left {
+    margin-left: 2rem;
+  }
+}
