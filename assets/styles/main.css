@@ -177,6 +177,11 @@ html {
   margin-right: 7rem;
 }
 
+@media screen and (max-width: 810px) {
+  .bio {
+    flex-direction: column;
+  }
+}
 .style {
   padding: 5rem 3.5rem;
   display: flex;

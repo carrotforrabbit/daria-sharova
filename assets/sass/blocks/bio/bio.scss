@@ -17,3 +17,9 @@
     margin-right: 7rem;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .bio {
+    flex-direction: column;
+  }
+}
