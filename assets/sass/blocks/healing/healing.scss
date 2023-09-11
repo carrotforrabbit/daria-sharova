@@ -1,5 +1,5 @@
 .healing {
-  padding: 4.75rem 9rem;
+  padding: 4.75rem 7.5vw;
   background-color: $bgr-color;
   color: $black;
 
@@ -30,5 +30,11 @@
     font-size: 2rem;
     font-weight: bold;
     font-family: "Hiragino";
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .healing__list {
+    max-width: 80%;
   }
 }

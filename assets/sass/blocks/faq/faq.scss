@@ -1,5 +1,5 @@
 .faq {
-  padding: 5rem 10rem;
+  padding: 5rem 8vw;
   background-color: $bgr-color;
 
   ul {
@@ -36,5 +36,11 @@
     &:hover {
       color: $light-brown;
     }
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .faq__drop-text {
+    padding-left: 0;
   }
 }

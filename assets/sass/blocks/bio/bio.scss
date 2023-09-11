@@ -21,5 +21,20 @@
 @media screen and (max-width: $tablet-width) {
   .bio {
     flex-direction: column;
+
+    &__wrapper {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .bio__img {
+    max-width: 41.597vw;
   }
 }

@@ -1,5 +1,5 @@
 .session {
-  padding: 4.75rem 9rem;
+  padding: 4.75rem 7.5vw;
   background-image: url("/assets/img/lines-vertical-faded.PNG");
   background-repeat: repeat;
   background-size: cover;
@@ -17,5 +17,16 @@
       margin-bottom: 3rem;
       text-align: justify;
     }
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .session ul {
+    max-width: 70%;
+  }
+
+  .session {
+    background-size: contain;
+    background-position: center;
   }
 }

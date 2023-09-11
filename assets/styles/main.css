@@ -181,6 +181,18 @@ html {
   .bio {
     flex-direction: column;
   }
+  .bio__wrapper {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .bio__img {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 810px) and (max-width: 1024px) {
+  .bio__img {
+    max-width: 41.597vw;
+  }
 }
 .style {
   padding: 5rem 3.5rem;
@@ -201,6 +213,25 @@ html {
   margin-right: 7rem;
 }
 
+@media screen and (max-width: 810px) {
+  .style {
+    flex-direction: column;
+  }
+  .style__img {
+    max-width: 100%;
+  }
+  .style__img-wrapper {
+    margin-right: 0;
+  }
+  .style__wrapper {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 810px) and (max-width: 1024px) {
+  .bio__img {
+    max-width: 41.597vw;
+  }
+}
 .works {
   padding: 9.3rem 3rem 6.25rem 3rem;
   background-color: rgb(166, 125, 68);
@@ -240,6 +271,11 @@ html {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 810px) {
+  .works {
+    flex-direction: column;
+  }
+}
 .style-point {
   height: 100vh;
   padding: 10rem 5rem;
@@ -263,7 +299,7 @@ html {
 }
 
 .session {
-  padding: 4.75rem 9rem;
+  padding: 4.75rem 7.5vw;
   background-image: url("/assets/img/lines-vertical-faded.PNG");
   background-repeat: repeat;
   background-size: cover;
@@ -281,8 +317,17 @@ html {
   text-align: justify;
 }
 
+@media screen and (max-width: 810px) {
+  .session ul {
+    max-width: 70%;
+  }
+  .session {
+    background-size: contain;
+    background-position: center;
+  }
+}
 .healing {
-  padding: 4.75rem 9rem;
+  padding: 4.75rem 7.5vw;
   background-color: rgb(166, 125, 68);
   color: #000000;
 }
@@ -310,6 +355,11 @@ html {
   font-family: "Hiragino";
 }
 
+@media screen and (max-width: 810px) {
+  .healing__list {
+    max-width: 80%;
+  }
+}
 .collab {
   padding: 4.75rem 3.125rem;
   display: flex;
@@ -336,7 +386,7 @@ html {
 }
 
 .faq {
-  padding: 5rem 10rem;
+  padding: 5rem 8vw;
   background-color: rgb(166, 125, 68);
 }
 .faq ul {
@@ -368,6 +418,11 @@ html {
   color: rgb(236, 193, 138);
 }
 
+@media screen and (max-width: 810px) {
+  .faq__drop-text {
+    padding-left: 0;
+  }
+}
 .item-list {
   padding: 1rem 0;
 }
