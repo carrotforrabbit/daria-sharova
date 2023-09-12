@@ -14,3 +14,13 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .form-intro {
+    padding-top: 6rem;
+
+    &__text {
+      max-width: 70%;
+    }
+  }
+}

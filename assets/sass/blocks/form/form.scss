@@ -232,3 +232,27 @@
   opacity: 1;
   visibility: visible;
 }
+
+@media screen and (max-width: $tablet-width) {
+  .form {
+    max-width: 80%;
+    padding-top: 4rem;
+
+    &__input {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+
+    &__label {
+      font-size: 1rem;
+    }
+  }
+
+  .options__label span {
+    font-size: 1rem;
+  }
+
+  .checkbox__label {
+    font-size: 1rem;
+  }
+}

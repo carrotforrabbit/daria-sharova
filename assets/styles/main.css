@@ -85,6 +85,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 810px) {
+  body {
+    font-size: 1rem;
+  }
+}
 .text {
   font-size: 1.375rem;
   font-weight: 100;
@@ -96,6 +101,11 @@ html {
   color: #000000;
 }
 
+@media screen and (max-width: 810px) {
+  .text {
+    font-size: 1rem;
+  }
+}
 .title {
   font-size: 3rem;
   font-family: "Hiragino", serif;
@@ -110,6 +120,11 @@ html {
   color: rgb(192, 137, 55);
 }
 
+@media screen and (max-width: 810px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
 .btn {
   position: relative;
   font-size: 2rem;
@@ -651,6 +666,25 @@ html {
   visibility: visible;
 }
 
+@media screen and (max-width: 810px) {
+  .form {
+    max-width: 80%;
+    padding-top: 4rem;
+  }
+  .form__input {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  .form__label {
+    font-size: 1rem;
+  }
+  .options__label span {
+    font-size: 1rem;
+  }
+  .checkbox__label {
+    font-size: 1rem;
+  }
+}
 .form-intro {
   padding-top: 8.75rem;
   text-align: center;
@@ -666,6 +700,14 @@ html {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 810px) {
+  .form-intro {
+    padding-top: 6rem;
+  }
+  .form-intro__text {
+    max-width: 70%;
+  }
+}
 .hamburger-btn {
   display: block;
   width: 2rem;

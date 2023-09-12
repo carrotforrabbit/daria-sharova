@@ -14,3 +14,9 @@
     color: $dark-brown;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
