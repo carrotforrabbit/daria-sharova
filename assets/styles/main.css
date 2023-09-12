@@ -122,7 +122,10 @@ html {
 
 @media screen and (max-width: 810px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+  .title_small {
+    font-size: 1.9rem;
   }
 }
 .btn {
@@ -349,8 +352,6 @@ html {
 .healing__item-title {
   font-size: 2rem;
   font-family: "Hiragino";
-}
-.healing__item-title {
   margin-bottom: 1.5rem;
 }
 .healing h2 {
@@ -373,6 +374,12 @@ html {
 @media screen and (max-width: 810px) {
   .healing__list {
     max-width: 80%;
+  }
+  .healing__item-title {
+    font-size: 1.5rem;
+  }
+  .healing ol li::marker {
+    font-size: 1.5rem;
   }
 }
 .collab {
@@ -794,6 +801,7 @@ html {
 .hamburger__item:last-child {
   list-style-type: none;
   text-decoration: underline;
+  margin-bottom: 4rem;
 }
 .hamburger__link {
   text-decoration: none;

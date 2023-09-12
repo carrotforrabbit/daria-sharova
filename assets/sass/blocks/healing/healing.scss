@@ -6,9 +6,6 @@
   &__item-title {
     font-size: 2rem;
     font-family: "Hiragino";
-  }
-
-  &__item-title {
     margin-bottom: 1.5rem;
   }
 
@@ -34,7 +31,17 @@
 }
 
 @media screen and (max-width: $tablet-width) {
-  .healing__list {
-    max-width: 80%;
+  .healing {
+    &__list {
+      max-width: 80%;
+    }
+
+    &__item-title {
+      font-size: 1.5rem;
+    }
+
+    ol li::marker {
+      font-size: 1.5rem;
+    }
   }
 }
