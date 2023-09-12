@@ -525,7 +525,7 @@ html {
 }
 .form__btn::after {
   position: absolute;
-  content: url("/assets/img/icons/arrow-brown.svg");
+  content: url("../img/icons/arrow-brown.svg");
   left: 34%;
 }
 .form__btn:focus {
@@ -598,7 +598,7 @@ html {
   font-family: "Hiragino";
   font-size: 1.5rem;
   color: rgb(192, 137, 55);
-  background-image: url("/assets/img/icons/attach-btn.svg");
+  background-image: url("../img/icons/attach-btn.svg");
   background-repeat: no-repeat;
   background-position: left;
   cursor: pointer;
