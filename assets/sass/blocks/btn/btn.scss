@@ -11,7 +11,7 @@
 
     &::after {
       position: absolute;
-      content: url("/assets/img/icons/arrow-black.svg");
+      content: url("../img/icons/arrow-black.svg");
       right: -40%;
     }
   }
@@ -21,7 +21,7 @@
 
     &::after {
       position: absolute;
-      content: url("/assets/img/icons/arrow-brown.svg");
+      content: url("../img/icons/arrow-brown.svg");
       right: -30%;
     }
 
