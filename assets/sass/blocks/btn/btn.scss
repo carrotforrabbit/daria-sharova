@@ -30,3 +30,9 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}

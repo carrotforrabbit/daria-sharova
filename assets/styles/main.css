@@ -37,6 +37,21 @@
   flex-direction: column;
 }
 
+@media screen and (max-width: 810px) {
+  .intro {
+    padding: 0 3rem;
+  }
+  .intro__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .intro__subtitle {
+    font-size: 1.5rem;
+  }
+  .intro span {
+    display: none;
+  }
+}
 .up-button {
   display: none;
   position: fixed;
@@ -156,6 +171,11 @@ html {
   color: rgb(236, 193, 138);
 }
 
+@media screen and (max-width: 810px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
 .about {
   display: flex;
   justify-content: center;
@@ -178,6 +198,12 @@ html {
   text-align: justify;
 }
 
+@media screen and (max-width: 810px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .bio {
   padding: 5rem 3.5rem;
   display: flex;

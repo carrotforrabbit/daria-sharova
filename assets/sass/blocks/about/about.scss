@@ -23,3 +23,10 @@
     text-align: justify;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+}
