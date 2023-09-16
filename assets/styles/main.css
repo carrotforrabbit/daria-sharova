@@ -42,11 +42,11 @@
     padding: 0 3rem;
   }
   .intro__title {
-    font-size: 2.5rem;
+    font-size: 18px;
     margin-bottom: 1.5rem;
   }
   .intro__subtitle {
-    font-size: 1.5rem;
+    font-size: 12px;
   }
   .intro span {
     display: none;
@@ -200,8 +200,19 @@ html {
 
 @media screen and (max-width: 810px) {
   .about {
-    display: flex;
-    flex-direction: column;
+    padding: 60px 10px;
+  }
+  .about__title {
+    font-size: 18px;
+  }
+  .about__subtitle {
+    font-size: 12px;
+  }
+  .about__text {
+    font-size: 10px;
+  }
+  .about__img {
+    margin-right: 11px;
   }
 }
 .bio {
@@ -281,6 +292,9 @@ html {
   background-color: rgb(166, 125, 68);
   text-align: center;
 }
+.works > img {
+  max-width: 100%;
+}
 .works__wrapper {
   display: flex;
   justify-content: space-between;
@@ -342,6 +356,17 @@ html {
   padding-right: 40%;
 }
 
+@media screen and (max-width: 810px) {
+  .style-point {
+    padding: 2rem;
+  }
+  .style-point__title, .style-point__text {
+    font-size: 2.5rem;
+  }
+  .style-point__text {
+    font-size: 1.5rem;
+  }
+}
 .session {
   padding: 4.75rem 7.5vw;
   background-image: url("../img/lines-vertical-faded.PNG");
@@ -433,6 +458,11 @@ html {
   margin-right: 7rem;
 }
 
+@media screen and (max-width: 810px) {
+  .collab > img {
+    max-width: 100%;
+  }
+}
 .faq {
   padding: 5rem 8vw;
   background-color: rgb(166, 125, 68);

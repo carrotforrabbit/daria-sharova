@@ -23,3 +23,17 @@
     padding-right: 40%;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .style-point {
+    padding: 2rem;
+    &__title,
+    &__text {
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+    }
+  }
+}

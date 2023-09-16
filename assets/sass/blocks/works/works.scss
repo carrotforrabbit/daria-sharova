@@ -3,6 +3,10 @@
   background-color: $bgr-color;
   text-align: center;
 
+  & > img {
+    max-width: 100%;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;

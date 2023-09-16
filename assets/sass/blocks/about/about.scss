@@ -26,7 +26,21 @@
 
 @media screen and (max-width: $tablet-width) {
   .about {
-    display: flex;
-    flex-direction: column;
+    padding: 60px 10px;
+    &__title {
+      font-size: 18px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+    }
+
+    &__text {
+      font-size: 10px;
+    }
+
+    &__img {
+      margin-right: 11px;
+    }
   }
 }

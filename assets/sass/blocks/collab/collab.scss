@@ -27,3 +27,11 @@
     margin-right: 7rem;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .collab {
+    & > img {
+      max-width: 100%;
+    }
+  }
+}
