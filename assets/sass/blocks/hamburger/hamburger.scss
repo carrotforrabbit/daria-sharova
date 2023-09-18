@@ -60,7 +60,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  padding: 3rem 10vw;
+  padding: 3rem 8vw;
   background-color: $black;
   transform: translateX(-100%);
   transition: transform 0.5s;
@@ -71,7 +71,7 @@
     padding: 3rem;
     color: $dark-brown;
     font-family: "Hiragino";
-    font-size: 6vw;
+    font-size: 8vw;
   }
 
   &__item {

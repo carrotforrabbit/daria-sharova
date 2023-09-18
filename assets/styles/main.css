@@ -895,7 +895,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  padding: 3rem 10vw;
+  padding: 3rem 8vw;
   background-color: #000000;
   transform: translateX(-100%);
   transition: transform 0.5s;
@@ -906,7 +906,7 @@ html {
   padding: 3rem;
   color: rgb(192, 137, 55);
   font-family: "Hiragino";
-  font-size: 6vw;
+  font-size: 8vw;
 }
 .hamburger__item {
   padding: 1rem;
