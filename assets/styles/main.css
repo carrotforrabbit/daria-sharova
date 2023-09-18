@@ -452,6 +452,29 @@ html {
   margin-right: 7rem;
 }
 
+@media screen and (max-width: 810px) {
+  .collab {
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+  }
+  .collab img {
+    max-width: 100%;
+  }
+  .collab__text-wrapper {
+    align-items: flex-end;
+    padding-top: 4rem;
+  }
+  .collab__link-wrapper {
+    margin-bottom: 4rem;
+    padding-right: 2.5rem;
+  }
+  .collab__img {
+    margin-right: 0;
+  }
+  .collab__text {
+    text-align: rigth;
+  }
+}
 .faq {
   padding: 5rem 8vw;
   background-color: rgb(166, 125, 68);
