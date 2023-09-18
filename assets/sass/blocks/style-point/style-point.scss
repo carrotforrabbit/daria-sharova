@@ -6,8 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__title,
-  &__text {
+  &__title {
     color: $dark-brown;
     font-size: 5rem;
     padding: 3rem;
@@ -19,7 +18,31 @@
   }
 
   &__text {
+    color: $dark-brown;
     font-size: 2rem;
+    padding: 3rem;
     padding-right: 40%;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .style-point {
+    padding: 2rem;
+    background-image: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 70%;
+
+    &__title {
+      font-size: 2.5rem;
+      padding: 0;
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      padding: 0;
+    }
   }
 }

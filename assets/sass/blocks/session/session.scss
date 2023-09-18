@@ -28,5 +28,9 @@
   .session {
     background-size: contain;
     background-position: center;
+
+    &__title {
+      max-width: 80%;
+    }
   }
 }

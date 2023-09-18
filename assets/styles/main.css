@@ -204,6 +204,13 @@ html {
     flex-direction: column;
     padding: 2rem 1.5rem;
   }
+  .about img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .about__link {
+    padding-right: 0.5rem;
+  }
 }
 .bio {
   padding: 5rem 3.5rem;
@@ -338,6 +345,9 @@ html {
     justify-content: flex-start;
     margin-right: 0;
   }
+  .works__link {
+    padding-right: 0.5rem;
+  }
 }
 .style-point {
   height: 100vh;
@@ -347,7 +357,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.style-point__title, .style-point__text {
+.style-point__title {
   color: rgb(192, 137, 55);
   font-size: 5rem;
   padding: 3rem;
@@ -357,10 +367,31 @@ html {
   font-family: "Heragino";
 }
 .style-point__text {
+  color: rgb(192, 137, 55);
   font-size: 2rem;
+  padding: 3rem;
   padding-right: 40%;
 }
 
+@media screen and (max-width: 810px) {
+  .style-point {
+    padding: 2rem;
+    background-image: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 70%;
+  }
+  .style-point__title {
+    font-size: 2.5rem;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  .style-point__text {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
 .session {
   padding: 4.75rem 7.5vw;
   background-image: url("../img/lines-vertical-faded.PNG");
@@ -387,6 +418,9 @@ html {
   .session {
     background-size: contain;
     background-position: center;
+  }
+  .session__title {
+    max-width: 80%;
   }
 }
 .healing {
@@ -463,6 +497,7 @@ html {
   .collab__text-wrapper {
     align-items: flex-end;
     padding-top: 4rem;
+    text-align: right;
   }
   .collab__link-wrapper {
     margin-bottom: 4rem;
