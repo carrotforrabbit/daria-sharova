@@ -24,6 +24,7 @@
 @media screen and (max-width: $tablet-width) {
   .style {
     flex-direction: column;
+    padding: 2rem 1.5rem;
 
     &__img {
       max-width: 100%;

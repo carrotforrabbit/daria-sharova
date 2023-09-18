@@ -21,6 +21,7 @@
 @media screen and (max-width: $tablet-width) {
   .bio {
     flex-direction: column;
+    padding: 2rem 1.5rem;
 
     &__wrapper {
       margin-right: 0;
