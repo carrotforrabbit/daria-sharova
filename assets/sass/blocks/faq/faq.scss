@@ -7,10 +7,12 @@
   }
 
   details > summary {
+    display: list-item;
     list-style-type: disc;
   }
 
   details[open] > summary {
+    display: list-item;
     list-style-type: disc;
     margin-bottom: 2rem;
   }

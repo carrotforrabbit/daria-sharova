@@ -521,9 +521,11 @@ html {
   list-style-type: none;
 }
 .faq details > summary {
+  display: list-item;
   list-style-type: disc;
 }
 .faq details[open] > summary {
+  display: list-item;
   list-style-type: disc;
   margin-bottom: 2rem;
 }
