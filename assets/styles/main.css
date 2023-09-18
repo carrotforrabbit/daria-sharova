@@ -42,11 +42,11 @@
     padding: 0 3rem;
   }
   .intro__title {
-    font-size: 2.5rem;
+    font-size: 18px;
     margin-bottom: 1.5rem;
   }
   .intro__subtitle {
-    font-size: 1.5rem;
+    font-size: 12px;
   }
   .intro span {
     display: none;
@@ -290,6 +290,9 @@ html {
   padding: 9.3rem 3rem 6.25rem 3rem;
   background-color: rgb(166, 125, 68);
   text-align: center;
+}
+.works > img {
+  max-width: 100%;
 }
 .works__wrapper {
   display: flex;
