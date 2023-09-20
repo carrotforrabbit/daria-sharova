@@ -35,6 +35,14 @@
     &:focus {
       outline: 1px solid $light-brown;
     }
+
+    &::placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder {
+      color: inherit;
+      font-family: "Roboto";
+    }
   }
 
   &__label {
@@ -243,7 +251,9 @@
       font-size: 1rem;
 
       &::placeholder,
-      &::-moz-placeholder {
+      &::-moz-placeholder,
+      &::-webkit-input-placeholder,
+      &:-moz-placeholder {
         font-family: "Roboto";
         color: $light-brown2;
       }
