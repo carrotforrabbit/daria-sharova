@@ -804,7 +804,7 @@ html {
 @media screen and (max-width: 810px) {
   .form {
     max-width: 80%;
-    padding-top: 4rem;
+    padding: 4rem 0;
   }
   .form__input {
     padding: 0.75rem 1.5rem;
@@ -812,6 +812,9 @@ html {
   }
   .form__label {
     font-size: 1rem;
+  }
+  .form__btn::after {
+    right: 10%;
   }
   .options__label span {
     font-size: 1rem;
