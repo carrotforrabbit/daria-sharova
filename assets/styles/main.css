@@ -810,6 +810,10 @@ html {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
+  .form__input::placeholder, .form__input::-moz-placeholder {
+    font-family: "Roboto";
+    color: rgba(236, 193, 138, 0.62);
+  }
   .form__label {
     font-size: 1rem;
   }
