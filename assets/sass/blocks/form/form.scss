@@ -30,7 +30,7 @@
     background-color: inherit;
     color: inherit;
     font-size: 1.25rem;
-    font-family: "Roboto";
+    font-family: inherit;
 
     &:focus {
       outline: 1px solid $light-brown;
@@ -41,7 +41,7 @@
     &::-webkit-input-placeholder,
     &:-moz-placeholder {
       color: inherit;
-      font-family: "Roboto";
+      font-family: inherit;
     }
   }
 
@@ -249,12 +249,13 @@
     &__input {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
+      font-family: inherit;
 
       &::placeholder,
       &::-moz-placeholder,
       &::-webkit-input-placeholder,
       &:-moz-placeholder {
-        font-family: "Roboto";
+        font-family: inherit;
         color: $light-brown2;
       }
     }

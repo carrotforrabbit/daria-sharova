@@ -626,14 +626,14 @@ html {
   background-color: inherit;
   color: inherit;
   font-size: 1.25rem;
-  font-family: "Roboto";
+  font-family: inherit;
 }
 .form__input:focus {
   outline: 1px solid rgb(236, 193, 138);
 }
 .form__input::placeholder, .form__input::-moz-placeholder, .form__input::-webkit-input-placeholder, .form__input:-moz-placeholder {
   color: inherit;
-  font-family: "Roboto";
+  font-family: inherit;
 }
 .form__label {
   color: rgba(236, 193, 138, 0.62);
@@ -813,9 +813,10 @@ html {
   .form__input {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
+    font-family: inherit;
   }
   .form__input::placeholder, .form__input::-moz-placeholder, .form__input::-webkit-input-placeholder, .form__input:-moz-placeholder {
-    font-family: "Roboto";
+    font-family: inherit;
     color: rgba(236, 193, 138, 0.62);
   }
   .form__label {
