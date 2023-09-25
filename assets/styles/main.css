@@ -632,7 +632,7 @@ html {
   outline: 1px solid rgb(236, 193, 138);
 }
 .form__input::placeholder, .form__input::-moz-placeholder, .form__input::-webkit-input-placeholder, .form__input:-moz-placeholder {
-  color: inherit;
+  color: rgba(236, 193, 138, 0.62);
   font-family: inherit;
 }
 .form__label {
@@ -823,7 +823,7 @@ html {
     font-size: 1rem;
   }
   .form__btn::after {
-    right: 10%;
+    right: 5%;
   }
   .options__label span {
     font-size: 1rem;
@@ -860,7 +860,7 @@ html {
   width: 2rem;
   height: 2rem;
   position: relative;
-  z-index: 100;
+  z-index: 10000;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -927,7 +927,7 @@ html {
   transform: translateX(-100%);
   transition: transform 0.5s;
   overflow: auto;
-  z-index: 10;
+  z-index: 9999;
 }
 .hamburger__list {
   padding: 3rem;

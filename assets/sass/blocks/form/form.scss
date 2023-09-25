@@ -40,7 +40,7 @@
     &::-moz-placeholder,
     &::-webkit-input-placeholder,
     &:-moz-placeholder {
-      color: inherit;
+      color: $light-brown2;
       font-family: inherit;
     }
   }
@@ -266,7 +266,7 @@
 
     &__btn {
       &::after {
-        right: 10%;
+        right: 5%;
       }
     }
   }
