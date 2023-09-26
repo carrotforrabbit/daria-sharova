@@ -570,7 +570,7 @@ html {
     padding-left: 0;
   }
   .faq details > summary::before {
-    top: 5px;
+    top: 6px;
   }
 }
 .item-list {
