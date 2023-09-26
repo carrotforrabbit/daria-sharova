@@ -16,53 +16,53 @@ let points = [
   },
 ];
 
-// const stylePoint = document.getElementById("point");
-
-// window.addEventListener("scroll", fillData);
-
-// function fillData() {
-//   // for (let i = 0, l = points.length; i < l; i++) {
-//   //   let heading = document.querySelector(".style-point__title");
-//   //   let description = document.querySelector(".style-point__text");
-
-//   //   heading.innerHTML = points[i].title;
-//   //   description.innerHTML = points[i].text;
-//   // }
-
-//   // Calculate which point to display based on the scroll position
-//   const scrollPosition = stylePoint.scrollTop;
-//   const sectionOffsets = points.map(
-//     (_, index) => index * stylePoint.clientHeight
-//   );
-//   let pointIndex = 0;
-
-//   for (let i = 0; i < sectionOffsets.length; i++) {
-//     if (scrollPosition >= sectionOffsets[i]) {
-//       pointIndex = i;
-//     }
-//   }
-
-//   // Update the corresponding elements
-//   let heading = document.querySelector(".style-point__title");
-//   let description = document.querySelector(".style-point__text");
-
-//   heading.innerHTML = points[pointIndex].title;
-//   description.innerHTML = points[pointIndex].text;
-// }
-
 const stylePoint = document.getElementById("point");
-const heading = document.querySelector(".style-point__title");
-const description = document.querySelector(".style-point__text");
 
-stylePoint.addEventListener("scroll", updateData);
+window.addEventListener("scroll", fillData);
 
-function updateData() {
+function fillData() {
+  //   // for (let i = 0, l = points.length; i < l; i++) {
+  //   //   let heading = document.querySelector(".style-point__title");
+  //   //   let description = document.querySelector(".style-point__text");
+
+  //   //   heading.innerHTML = points[i].title;
+  //   //   description.innerHTML = points[i].text;
+  //   // }
+
   // Calculate which point to display based on the scroll position
   const scrollPosition = stylePoint.scrollTop;
-  const sectionHeight = stylePoint.clientHeight;
-  const pointIndex = Math.floor(scrollPosition / sectionHeight);
+  const sectionOffsets = points.map(
+    (_, index) => index * stylePoint.clientHeight
+  );
+  let pointIndex = 0;
+
+  for (let i = 0; i < sectionOffsets.length; i++) {
+    if (scrollPosition >= sectionOffsets[i]) {
+      pointIndex = i;
+    }
+  }
 
   // Update the corresponding elements
+  let heading = document.querySelector(".style-point__title");
+  let description = document.querySelector(".style-point__text");
+
   heading.innerHTML = points[pointIndex].title;
   description.innerHTML = points[pointIndex].text;
 }
+
+// const stylePoint = document.getElementById("point");
+// const heading = document.querySelector(".style-point__title");
+// const description = document.querySelector(".style-point__text");
+
+// stylePoint.addEventListener("scroll", updateData);
+
+// function updateData() {
+//   // Calculate which point to display based on the scroll position
+//   const scrollPosition = stylePoint.scrollTop;
+//   const sectionHeight = stylePoint.clientHeight;
+//   const pointIndex = Math.floor(scrollPosition / sectionHeight);
+
+//   // Update the corresponding elements
+//   heading.innerHTML = points[pointIndex].title;
+//   description.innerHTML = points[pointIndex].text;
+// }
