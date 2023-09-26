@@ -603,21 +603,6 @@ html {
   padding: 3%;
   padding-top: 5rem;
 }
-.form__body {
-  position: relative;
-}
-.form__body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease 0s;
-  background: rgba(143, 51, 51, 0.657);
-}
 .form__input {
   padding: 1.5rem;
   margin-bottom: 1rem;
@@ -817,13 +802,13 @@ html {
   }
   .form__input::placeholder, .form__input::-moz-placeholder, .form__input::-webkit-input-placeholder, .form__input:-moz-placeholder {
     font-family: inherit;
-    color: rgba(236, 193, 138, 0.62);
+    color: red;
   }
   .form__label {
     font-size: 1rem;
   }
   .form__btn::after {
-    right: 5%;
+    right: 3%;
   }
   .options__label span {
     font-size: 1rem;
@@ -1049,6 +1034,21 @@ html {
   40% {
     opacity: 1;
   }
+}
+
+.popup {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0.7;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  z-index: 9999;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=main.css.map */

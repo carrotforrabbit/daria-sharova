@@ -52,6 +52,7 @@
                 </nav>
             </div>
         </header>
+
         <div class="form__body">
             <section class="form-intro">
                 <h1 class="form-intro__title title">appointment form</h1>
@@ -96,7 +97,8 @@
                     <input type="text" id="formDays" class="form__input" placeholder="Your answer">
                 </div>
                 <div class="form__item">
-                    <label class="form__label" for="formIdea">Describe your idea in as much detail as possible</label>
+                    <label class="form__label" for="formIdea">Describe your idea in as much detail as
+                        possible</label>
                     <textarea name="idea" class="form__input _req" id="formIdea"></textarea>
                 </div>
                 <div class="form__item">
@@ -112,7 +114,8 @@
                 </div>
                 <div class="form__item">
                     <p class="form__label">A part of the body and the approximate size</p>
-                    <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting
+                    <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good
+                        lighting
                     </p>
                     <div class="file">
                         <div class="file__item">
@@ -128,7 +131,8 @@
                         please
                         share photos of what you
                         already have</p>
-                    <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good lighting
+                    <p class="form__subtitle">Attach a photo of this part in a relaxed position and with good
+                        lighting
                     </p>
                     <div class="file">
                         <div class="file__item">
@@ -142,7 +146,8 @@
                 <div class="form__item">
                     <div class="checkbox">
                         <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input _req" checked>
-                        <label for="formAgreement" class="checkbox__label">I acknowledge that I have read the Privacy
+                        <label for="formAgreement" class="checkbox__label">I acknowledge that I have read the
+                            Privacy
                             Policy
                             and consent to the processing of personal data in the manner and on
                             the terms specified in the Policy</label>
@@ -150,7 +155,10 @@
                 </div>
                 <button type="submit" class="form__btn">Send a request</button>
             </form>
-            <!-- <div class="preloader">
+        </div>
+
+        <!-- Uploader -->
+        <!-- <div class="preloader">
                 <div class="preloader__row">
                     <div class="preloader__item preloader__item_1"></div>
                     <div class="preloader__item preloader__item_2"></div>
@@ -159,11 +167,16 @@
                 </div>
             </div> -->
 
-            <!-- Final popup -->
-            <section class="popup">
-
-            </section>
-        </div>
+        <!-- Final popup -->
+        <section class="popup">
+            <div class="popup__wrapper">
+                <h2 class="popup__title title">appointment form</h2>
+                <p class="popup__text">The answer can take up to 1-3 weeks. It depends on my workload. Please do
+                    not
+                    duplicate your message in direct and do not reach out repeatedly</p>
+                <p class="popup__subtitle">An exciting journey and an interesting experience awaits you!</p>
+            </div>
+        </section>
     </div>
 
     <script src="./assets/scripts/preloader.js"></script>

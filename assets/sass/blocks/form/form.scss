@@ -5,22 +5,22 @@
   padding: 3%;
   padding-top: 5rem;
 
-  &__body {
-    position: relative;
+  // &__body {
+  //   position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease 0s;
-      background: rgba(143, 51, 51, 0.657);
-    }
-  }
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     opacity: 0;
+  //     visibility: hidden;
+  //     transition: all 0.3s ease 0s;
+  //     background: rgba(143, 51, 51, 0.657);
+  //   }
+  // }
 
   &__input {
     padding: 1.5rem;
@@ -256,7 +256,7 @@
       &::-webkit-input-placeholder,
       &:-moz-placeholder {
         font-family: inherit;
-        color: $light-brown2;
+        color: red;
       }
     }
 
@@ -266,7 +266,7 @@
 
     &__btn {
       &::after {
-        right: 5%;
+        right: 3%;
       }
     }
   }
