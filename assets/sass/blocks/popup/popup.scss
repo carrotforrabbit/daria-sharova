@@ -9,7 +9,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   //   opacity: 0.85;
-  visibility: hidden;
+  visibility: visible;
 
   &__wrapper {
     max-width: 40%;
@@ -42,6 +42,18 @@
     &__wrapper {
       max-width: 80%;
       padding: 2rem;
+    }
+
+    &__title {
+      font-size: 1.9rem;
+    }
+
+    &__text {
+      font-size: 1rem;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
     }
   }
 }
