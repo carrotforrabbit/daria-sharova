@@ -13,8 +13,13 @@
   }
 
   &__wrapper {
+    max-width: 45%;
     padding-top: 1.75rem;
     margin-right: 7rem;
+  }
+
+  &__img {
+    max-width: 100%;
   }
 }
 
@@ -24,8 +29,13 @@
     padding: 2rem 1.5rem;
 
     &__wrapper {
+      max-width: 100%;
       margin-right: 0;
       margin-bottom: 2rem;
+
+      * {
+        max-width: 100%;
+      }
     }
 
     &__img {
