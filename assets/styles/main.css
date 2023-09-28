@@ -853,6 +853,10 @@ html {
     max-width: 70%;
   }
 }
+.nav {
+  z-index: 99;
+}
+
 .hamburger-btn {
   display: block;
   width: 2rem;
@@ -1058,7 +1062,7 @@ html {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  visibility: visible;
+  visibility: hidden;
 }
 .popup__wrapper {
   max-width: 40%;
