@@ -39,6 +39,7 @@
 
 @media screen and (max-width: 810px) {
   .intro {
+    display: none;
     padding: 0 1rem;
   }
   .intro__title {
@@ -146,7 +147,7 @@ html {
     font-size: 2.5rem;
   }
   .title_small {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 }
 .btn {
@@ -196,6 +197,9 @@ html {
   color: rgb(192, 137, 55);
   font-size: 2rem;
 }
+.about__subtitle_mobile {
+  display: none;
+}
 .about__img {
   margin-right: 7rem;
 }
@@ -209,6 +213,15 @@ html {
     display: flex;
     flex-direction: column;
     padding: 2rem 1.5rem;
+    height: 100vh;
+  }
+  .about__subtitle {
+    display: none;
+  }
+  .about__subtitle_mobile {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
   .about img {
     max-width: 100%;
@@ -358,6 +371,7 @@ html {
   .works__text-wrapper {
     max-width: 100%;
     margin-bottom: 3rem;
+    padding-left: 0;
   }
   .works__photo-wrapper {
     justify-content: space-evenly;
@@ -366,12 +380,21 @@ html {
   .works__link {
     padding-right: 0.5rem;
   }
+  .works__link_contact {
+    display: none;
+  }
   .works__img_1 {
     margin-bottom: 0;
   }
+  .works__img_4 {
+    display: none;
+  }
+  .works__img_2 {
+    height: 100%;
+  }
 }
 .style-point {
-  height: 100vh;
+  height: 30%;
   padding: 10rem 5rem;
   background-image: url("../img/lines-vertical-bright.PNG");
   background-position: center;
@@ -396,20 +419,19 @@ html {
 
 @media screen and (max-width: 810px) {
   .style-point {
-    padding: 2rem;
+    padding: 7rem 5rem 12rem 2rem;
     background-image: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 70%;
   }
   .style-point__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0;
     margin-bottom: 3rem;
   }
   .style-point__text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 0;
   }
 }
@@ -527,8 +549,14 @@ html {
   .collab__img {
     margin-right: 0;
   }
+  .collab__img_1 {
+    display: none;
+  }
   .collab__text {
     text-align: rigth;
+  }
+  .collab__link {
+    display: none;
   }
 }
 .faq {
@@ -540,7 +568,7 @@ html {
 }
 .faq details > summary {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 2.5rem;
   list-style-type: none;
 }
 .faq details[open] > summary {
@@ -552,8 +580,8 @@ html {
 .faq details > summary::before {
   content: "";
   position: absolute;
-  width: 1rem;
-  height: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
   top: 12px;
   left: 10px;
   border-radius: 50%;
@@ -569,6 +597,7 @@ html {
 }
 .faq__drop-text {
   padding-left: 2.5rem;
+  text-align: justify;
 }
 .faq__link {
   color: inherit;
@@ -941,7 +970,6 @@ html {
   padding: 1rem;
 }
 .hamburger__item:last-child {
-  text-decoration: underline;
   margin-bottom: 4rem;
 }
 .hamburger__link {

@@ -57,6 +57,7 @@
 
 @media screen and (max-width: $tablet-width) {
   .intro {
+    display: none;
     padding: 0 1rem;
 
     &__title {

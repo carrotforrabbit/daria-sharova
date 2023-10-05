@@ -12,6 +12,10 @@
     margin-bottom: 1rem;
     color: $dark-brown;
     font-size: 2rem;
+
+    &_mobile {
+      display: none;
+    }
   }
 
   &__img {
@@ -29,6 +33,17 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 1.5rem;
+    height: 100vh;
+
+    &__subtitle {
+      display: none;
+
+      &_mobile {
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+    }
 
     & img {
       max-width: 100%;

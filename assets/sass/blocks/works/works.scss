@@ -64,6 +64,7 @@
     &__text-wrapper {
       max-width: 100%;
       margin-bottom: 3rem;
+      padding-left: 0;
     }
 
     &__photo-wrapper {
@@ -73,10 +74,21 @@
 
     &__link {
       padding-right: 0.5rem;
+
+      &_contact {
+        display: none;
+      }
     }
 
     &__img_1 {
       margin-bottom: 0;
+    }
+
+    &__img_4 {
+      display: none;
+    }
+    &__img_2 {
+      height: 100%;
     }
   }
 }

@@ -50,10 +50,18 @@
 
     &__img {
       margin-right: 0;
+
+      &_1 {
+        display: none;
+      }
     }
 
     &__text {
       text-align: rigth;
+    }
+
+    &__link {
+      display: none;
     }
   }
 }
