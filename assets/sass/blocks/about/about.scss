@@ -19,6 +19,7 @@
   }
 
   &__img {
+    max-width: 50%;
     margin-right: 7rem;
   }
 
@@ -34,6 +35,10 @@
     flex-direction: column;
     padding: 2rem 1.5rem;
     height: 100vh;
+
+    &__title {
+      margin-bottom: 0;
+    }
 
     &__subtitle {
       display: none;

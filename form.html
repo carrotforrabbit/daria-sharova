@@ -148,11 +148,63 @@
                 <div class="form__item">
                     <div class="checkbox">
                         <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input _req" checked>
-                        <label for="formAgreement" class="checkbox__label">I acknowledge that I have read the
-                            Privacy
-                            Policy
-                            and consent to the processing of personal data in the manner and on
-                            the terms specified in the Policy</label>
+                        <label for="formAgreement" class="checkbox__label">
+                            <div class="checkbox__label-wrapper">
+                                I acknowledge that I have read the
+                                <span class="modal-btn open-modal" id="privacyBtn">Privacy Policy</span>
+                                and consent to the processing of personal data in the manner and on
+                                the terms specified in the Policy
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal">
+                    <div class="modal__content">
+                        <div class="modal__container">
+                            <h2 class="modal__title title">Privacy Policy</h2>
+                            <svg class="modal__cross closeModal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                            </svg>
+                        </div>
+                        <h3 class="modal__subtitle">INFORMATION ON PERSONAL DATA PROCESSING</h3>
+                        <p class="modal__text text">
+
+                            In according with the REGULATION (EU) 2016/679 of 27 April 2016 on the protection of natural
+                            persons with regards to the
+                            processing of personal data and on the free movement of such data (General Data Protection
+                            Regulation or GDPR).
+
+                            Your privacy is important to us and we are committed to protecting your personal data. This
+                            information describes the
+                            processing of the personal data uploaded or collected on this internet domain.
+
+                            You may browse the Website freely and are not obliged to register, except for certain
+                            restricted areas of the same,
+                            where the user is required to freely and expressly provide personal data in order to be able
+                            to access and/or to use
+                            addictional services for which your specific consent is required. In the cases where you
+                            intend to provide your personal
+                            data in order to access those additional services, pursuant to Articles 13 and 14 of GDPR
+                            (GENERAL DATA PROTECTION
+                            REGULATION), we expressly inform you of the purposes and methods with which the data will
+                            be used by the “Data
+                            Controller”, and you will always be given the right to erase or update those data at any
+                            time.</p>
+                        <h3 class="modal__subtitle">DATA CONTROLLER</h3>
+                        <p class="modal__text text">
+                            The personal “Data Controller” is Daria Sharova, owner of the Website.</p>
+                        <h3 class="modal__subtitle">TYPES OF PERSONAL DATA PROCESSED</h3>
+                        <p class="modal__text text">
+                            You do not need to be registered to access the Website. We do not use cookies.
+                            <span class="modal__text_bold">
+                                We do not collect any special categories of personal data (which include sensitive
+                                personal information such as details
+                                about your race, ethnicity, religious beliefs, political affiliation and sexual
+                                orientation).
+                            </span>
+                        </p>
                     </div>
                 </div>
                 <button type="submit" class="form__btn">Send a request</button>
@@ -187,6 +239,7 @@
     <script src="assets/scripts/file-upload.js"></script>
     <script src="assets/scripts/up-btn.js"></script>
     <script src="assets/scripts/popup.js"></script>
+    <script src="assets/scripts/modal.js"></script>
 </body>
 
 </html>
