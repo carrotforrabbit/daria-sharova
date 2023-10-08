@@ -11,13 +11,14 @@
 
   &__content {
     width: 65%;
-    height: auto;
+    height: 80%;
     padding: 5rem;
     margin: 5% auto;
     color: inherit;
     font-size: 1rem;
     background-color: $black;
     border-radius: 50px;
+    overflow: auto;
   }
 
   &__text {

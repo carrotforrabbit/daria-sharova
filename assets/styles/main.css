@@ -213,6 +213,7 @@ html {
   .about {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 2rem 1.5rem;
     height: 100vh;
   }
@@ -229,7 +230,7 @@ html {
   }
   .about img {
     max-width: 100%;
-    max-height: 40%;
+    height: 50%;
     margin-right: 0;
   }
   .about__text {
@@ -364,26 +365,25 @@ html {
   margin-bottom: 2rem;
 }
 
+.works-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 810px) {
   .works {
     flex-direction: column;
     padding: 4rem 1.5rem;
   }
-  .works img {
-    max-width: 100%;
+  .works__img_4 {
+    display: none;
   }
-  .works__wrapper {
-    max-width: 100%;
-    margin-bottom: 0;
+  .works__photo-container {
+    display: none;
   }
   .works__text-wrapper {
     max-width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     padding-left: 0;
-  }
-  .works__photo-wrapper {
-    justify-content: space-evenly;
-    margin-right: 0;
   }
   .works__link {
     padding-right: 0.5rem;
@@ -391,15 +391,14 @@ html {
   .works__link_contact {
     display: none;
   }
-  .works__img_1 {
-    height: auto;
-    margin-bottom: 0;
+  .works-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .works__img_4 {
-    display: none;
-  }
-  .works__img_2 {
-    height: 100%;
+  .works-mobile__img {
+    max-width: 100%;
+    margin-bottom: 2rem;
   }
 }
 .style-point {
@@ -1151,13 +1150,14 @@ html {
 }
 .modal__content {
   width: 65%;
-  height: auto;
+  height: 80%;
   padding: 5rem;
   margin: 5% auto;
   color: inherit;
   font-size: 1rem;
   background-color: #000000;
   border-radius: 50px;
+  overflow: auto;
 }
 .modal__text {
   font-size: 1rem;
