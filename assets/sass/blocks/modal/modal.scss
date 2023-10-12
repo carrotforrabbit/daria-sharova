@@ -6,7 +6,6 @@
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
 
   &__content {
@@ -60,5 +59,26 @@
 
   &:hover {
     color: $light-brown;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .modal {
+    &__content {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+    }
+
+    &__text {
+      font-size: 0.85rem;
+    }
   }
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="image" href="favicon.ico">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>Daria Sharova. Tribal tattoos</title>
 </head>
 
@@ -167,9 +168,9 @@
                 <img src="assets/img/work-3.jpg" alt="" class="works__img works__img_2">
             </div>
             <div class="works-mobile">
-                <img src="assets/img/works-mobile1.jpeg" alt="" class="works-mobile__img">
-                <img src="assets/img/works-mobile2.jpeg" alt="" class="works-mobile__img">
-                <img src="assets/img/works-mobile3.jpeg" alt="" class="works-mobile__img">
+                <img src="assets/img/works-mobile1.webp" alt="" class="works-mobile__img">
+                <img src="assets/img/works-mobile2.webp" alt="" class="works-mobile__img">
+                <img src="assets/img/works-mobile3.webp" alt="" class="works-mobile__img">
             </div>
             <div class="works__link-wrapper"><a href="https://www.instagram.com/sh.d.tattoo/" target="blank"
                     class="works__link btn btn_dark">More</a>
@@ -260,9 +261,34 @@
                 <div class="collab__link-wrapper"><a href="mailto:forsh.d.tattoo@gmail.com?subject=Collaboration"
                         class="collab__link btn btn_light">Contact
                         me</a></div>
-                <img src="assets/img/collab-2.jpg" alt="" class="collab__img">
+                <!-- <img src="assets/img/collab-2.jpg" alt="" class="collab__img"> -->
             </div>
-
+            <div class="modal-slider swiper">
+                <div class="modal-slider__wrapper swiper-wrapper">
+                    <div class="modal-slider__slide swiper-slide">
+                        <div class="modal-slider__img"><img src="assets/img/collab-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-slider__slide swiper-slide">
+                        <div class="modal-slider__img"><img src="assets/img/collab1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-slider__slide swiper-slide">
+                        <div class="modal-slider__img"><img src="assets/img/collab2.webp" alt=""></div>
+                    </div>
+                    <div class="modal-slider__slide swiper-slide">
+                        <div class="modal-slider__img"><img src="assets/img/collab3.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-slider__slide swiper-slide">
+                        <div class="modal-slider__img"><img src="assets/img/collab4.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-slider__pagination swiper-pagination"></div>
+                <div class="modal-slider__button_prev swiper-button-prev"></div>
+                <div class="modal-slider__button_next swiper-button-next"></div>
+            </div>
         </section>
 
         <!-- FAQ -->
@@ -395,10 +421,12 @@
             </a>
         </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./assets/scripts/preloader.js"></script>
     <script src="./assets/scripts/hamburger.js"></script>
     <script src="./assets/scripts/up-btn.js"></script>
+    <script src="./assets/scripts/swiper.js"></script>
+
 </body>
 
 </html>

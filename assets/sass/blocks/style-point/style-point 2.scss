@@ -1,0 +1,47 @@
+.style-point {
+  height: 30%;
+  padding: 10rem 5rem;
+  background-image: url("../img/lines-vertical-bright.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    color: $dark-brown;
+    font-size: 5rem;
+    padding: 3rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: "Heragino";
+  }
+
+  &__text {
+    color: $dark-brown;
+    font-size: 2rem;
+    padding: 3rem;
+    padding-right: 40%;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .style-point {
+    padding: 7rem 5rem 12rem 2rem;
+    background-image: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__title {
+      font-size: 2rem;
+      padding: 0;
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      font-size: 1.25rem;
+      padding: 0;
+    }
+  }
+}

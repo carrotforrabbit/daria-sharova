@@ -1,0 +1,47 @@
+.style {
+  padding: 5rem 3.5rem;
+  display: flex;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+
+  &__wrapper {
+    padding-top: 4rem;
+    margin-right: 7rem;
+  }
+
+  &__img-wrapper {
+    margin-right: 7rem;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .style {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+
+    &__img {
+      max-width: 100%;
+    }
+
+    &__img-wrapper {
+      margin-right: 0;
+    }
+
+    &__wrapper {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .bio__img {
+    max-width: 41.597vw;
+  }
+}
