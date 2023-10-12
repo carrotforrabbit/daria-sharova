@@ -1214,33 +1214,31 @@ html {
     font-size: 0.85rem;
   }
 }
-.modal-slider {
-  display: none;
-  width: 100%;
-  height: auto;
-  background-color: #000000;
-}
-
 .swiper {
   display: none;
-}
-
-.modal__wrapper {
-  margin-bottom: 2rem;
-}
-
-.modal-slider__img img {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.modal-slider__slide {
-  width: 45%;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 810px) {
   .swiper {
     display: block;
+    visibility: visible;
+  }
+  .modal__wrapper {
+    margin-bottom: 2rem;
+  }
+  .modal-slider {
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+  }
+  .modal-slider__img img {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .modal-slider__slide {
+    width: 45%;
   }
   .swiper-pagination-bullet {
     background-color: rgba(236, 193, 138, 0.62) !important;
