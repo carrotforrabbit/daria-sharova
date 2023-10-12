@@ -524,7 +524,7 @@ html {
   padding-top: 7rem;
 }
 .collab__title {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .collab__text {
   max-width: 70%;
@@ -535,25 +535,6 @@ html {
 }
 .collab__img {
   margin-right: 7rem;
-}
-
-.modal-slider {
-  width: 100%;
-  height: auto;
-  background-color: #000000;
-}
-
-.modal__wrapper {
-  margin-bottom: 2rem;
-}
-
-.modal-slider__img img {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.modal-slider__slide {
-  width: 45%;
 }
 
 @media screen and (max-width: 810px) {
@@ -579,8 +560,12 @@ html {
   .collab__img_1 {
     display: none;
   }
+  .collab__img_desktop {
+    display: none;
+  }
   .collab__text {
-    text-align: rigth;
+    text-align: right;
+    margin-bottom: 2rem;
   }
   .collab__link {
     display: none;
@@ -1227,6 +1212,43 @@ html {
   }
   .modal__text {
     font-size: 0.85rem;
+  }
+}
+.modal-slider {
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+}
+
+.swiper {
+  display: none;
+}
+
+.modal__wrapper {
+  margin-bottom: 2rem;
+}
+
+.modal-slider__img img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-slider__slide {
+  width: 45%;
+}
+
+@media screen and (max-width: 810px) {
+  .swiper {
+    display: block;
+  }
+  .swiper-pagination-bullet {
+    background-color: rgba(236, 193, 138, 0.62) !important;
+  }
+  .swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 2rem !important;
+    color: rgb(192, 137, 55);
   }
 }
 

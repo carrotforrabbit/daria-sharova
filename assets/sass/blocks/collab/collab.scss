@@ -11,7 +11,7 @@
   }
 
   &__title {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 
   &__text {
@@ -26,24 +26,6 @@
   &__img {
     margin-right: 7rem;
   }
-}
-
-.modal-slider {
-  width: 100%;
-  height: auto;
-  background-color: $black;
-}
-.modal__wrapper {
-  margin-bottom: 2rem;
-}
-
-.modal-slider__img img {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.modal-slider__slide {
-  width: 45%;
 }
 
 @media screen and (max-width: $tablet-width) {
@@ -72,10 +54,15 @@
       &_1 {
         display: none;
       }
+
+      &_desktop {
+        display: none;
+      }
     }
 
     &__text {
-      text-align: rigth;
+      text-align: right;
+      margin-bottom: 2rem;
     }
 
     &__link {

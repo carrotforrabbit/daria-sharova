@@ -1,0 +1,39 @@
+.modal-slider {
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: $black;
+}
+
+.swiper {
+  display: none;
+}
+
+.modal__wrapper {
+  margin-bottom: 2rem;
+}
+
+.modal-slider__img img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-slider__slide {
+  width: 45%;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .swiper {
+    display: block;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $light-brown2 !important;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 2rem !important;
+    color: $dark-brown;
+  }
+}
